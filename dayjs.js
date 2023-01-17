@@ -1,0 +1,16 @@
+"use strict";
+exports.__esModule = true;
+var dayjs = require("dayjs");
+var advancedFormat = require("dayjs/plugin/advancedFormat");
+// import * as customParseFormat from "dayjs/plugin/customParseFormat";
+var isoWeek = require("dayjs/plugin/isoWeek");
+var timezone = require("dayjs/plugin/timezone");
+var utc = require("dayjs/plugin/utc");
+dayjs.extend(advancedFormat);
+// dayjs.extend(customParseFormat);
+dayjs.extend(isoWeek);
+dayjs.extend(timezone);
+dayjs.extend(utc);
+var d = dayjs.unix(Number(1614524400)).tz("Asia/Tokyo");
+console.log(d.toISOString());
+console.log(d.format("YYYY-W"));
