@@ -1,2 +1,13 @@
 # moment-dayjs-timezone-tz
-tz が反映されるのかテストする
+
+I test moment and dayjs compatibility.
+
+```
+npx tsc dayjs.ts
+
+TZ=UTC node dayjs.js
+
+npx tsc moment.ts
+
+TZ=UTC node moment.js
+```
