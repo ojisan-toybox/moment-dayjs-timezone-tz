@@ -14,3 +14,5 @@ console.log(d.toISOString());
 console.log(d.format("YYYY年 第W週"));
 // console.log(moment("2021-02-28T15:00:00.000Z").format("YYYY年 第W週"));
 // console.log(moment.tz("2021-03-01", "Asia/Tokyo").format("YYYY年 第W週"));
+m.now();
+m().day;
